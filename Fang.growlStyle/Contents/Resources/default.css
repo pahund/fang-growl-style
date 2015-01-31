@@ -1,27 +1,48 @@
 body {
 	font-family: Helvetica Neue;
 	color: #ffffff;
-}
-
-#background {
-	background-color: #000000;
 	width: 820px;
-	height: 728px;
+	height: 3000px;
+	overflow: hidden;
+	margin: 0;
+	background-color: pink;
 }
 
-#icon {
-	z-index: 1;
-	float: left;
-	top: 10px;
-	left: 10px;
-	width: 32px;
-	height: 32px;
-	margin-right: 5px;
+html {
+	height: 100%;
 }
 
-#icon img {
-	width: 32px;
-	height: 32px;
+.notification {
+	width: 820px;
+	height: 3000px;
+	-webkit-animation-duration: .4s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-name: slide;
+	-webkit-animation-timing-function: ease-in;
+	position: relative;
+	background: url(./fang-buttons.png) #000 no-repeat 10px 10px;
+	background-color: #000;
+	right: -820px;
+	top: 0;
+	z-index: -1;
+	margin: 0;
+}
+
+@-webkit-keyframes slide {
+	100% {
+		right: 0;
+	}
+}
+@-webkit-keyframes pop {
+	from {
+		-webkit-transform: scale(.1);
+	}
+	80% {
+		-webkit-transform: scale(1.2);
+	}
+	to {
+		-webkit-transform: scale(1)
+	}
 }
 
 #title {
@@ -39,12 +60,6 @@ body {
 	font-size: 13px;
 	line-height: 15px;
 }
-
-/*
-#text::first-line {
-	color: yellow;
-}
-*/
 
 #emergency #text {
 	color: red;

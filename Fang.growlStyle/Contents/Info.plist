@@ -31,8 +31,8 @@
 	<key>GrowlHasShadow</key>
 	<false/>
 	<key>GrowlPaddingX</key>
-	<real>20</real>
+	<real>0</real>
 	<key>GrowlPaddingY</key>
-	<real>20</real>
+	<real>0</real>
 </dict>
 </plist>
