@@ -1,0 +1,58 @@
+body {
+	font-family: Helvetica Neue;
+	color: #ffffff;
+}
+
+#background {
+	background-color: #000000;
+	width: 820px;
+	height: 728px;
+}
+
+#icon {
+	z-index: 1;
+	float: left;
+	top: 10px;
+	left: 10px;
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+}
+
+#icon img {
+	width: 32px;
+	height: 32px;
+}
+
+#title {
+	z-index: 1;
+	font-size: medium;
+	color: rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	padding: 10px;
+}
+
+#text {
+	z-index: 1;
+	padding: 10px;
+	font-family: Monaco;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+/*
+#text::first-line {
+	color: yellow;
+}
+*/
+
+#emergency #text {
+	color: red;
+}
+
+#buttons {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 0;
+}
