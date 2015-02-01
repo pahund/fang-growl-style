@@ -3,33 +3,30 @@ body {
 	color: #ffffff;
 	overflow: hidden;
 	margin: 0;
-	background-color: transparent;
     padding: 0;
-    width: 820px;
-}
-
-html {
-    width: 820px;
+	background-color: transparent;
+    position: relative;
+    left: -webkit-calc(100% - 1080px);
 }
 
 .notification {
+    position: absolute;
 	width: 820px;
-	height: 3000px;
-	-webkit-animation-duration: .2s;
+	height: 1440px;
+    top: 0;
+    left: 260px;
+	-webkit-animation-duration: 0.5s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-name: slide;
-	-webkit-animation-timing-function: ease-out;
-	position: absolute;
-	background: url(./fang-buttons.png) no-repeat 10px 10px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(40%,rgba(0,0,0,0)));
-	left: -webkit-calc(100% - 820px);
-	top: 0;
+	-webkit-animation-timing-function: ease-in;
+	background: url(./fang-buttons.png) no-repeat 10px 10px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,1)), color-stop(60%,rgba(0,0,0,0)));
 	z-index: -1;
 	margin: 0;
 }
 
 @-webkit-keyframes slide {
     from {
-        left: 100%;
+        left: 820px;
     }
 }
 
