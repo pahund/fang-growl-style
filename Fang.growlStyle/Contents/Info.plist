@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Fang Growl WebKit Style 1.0</string>
+	<string>Fang Keyboard Layout Notification for Growl</string>
 	<key>CFBundleExecutable</key>
 	<string></string>
 	<key>CFBundleIconFile</key>
@@ -19,11 +19,11 @@
 	<key>CFBundlePackageType</key>
 	<string>GWKS</string>
 	<key>CFBundleShortVersionString</key>
-	<string>Fang 1.0</string>
+	<string>Fang 1.1</string>
 	<key>CFBundleSignature</key>
 	<string>GRRR</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CSResourcesFileMapped</key>
 	<string>yes</string>
 	<key>GrowlPluginAuthor</key>
