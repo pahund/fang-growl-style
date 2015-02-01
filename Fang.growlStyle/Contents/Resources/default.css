@@ -19,7 +19,9 @@ body {
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-name: slide;
 	-webkit-animation-timing-function: ease-in;
-	background: url(./fang-buttons.png) no-repeat 10px 10px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,1)), color-stop(60%,rgba(0,0,0,0)));
+	background:
+        url(./fang-buttons.png) no-repeat 10px 10px,
+        -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,1)), color-stop(40%,rgba(0,0,0,1)), color-stop(60%,rgba(0,0,0,0)));
 	z-index: -1;
 	margin: 0;
 }
