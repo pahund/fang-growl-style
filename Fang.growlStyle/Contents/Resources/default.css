@@ -1,14 +1,15 @@
 body {
 	font-family: Helvetica Neue;
 	color: #ffffff;
-	width: 820px;
-	height: 3000px;
 	overflow: hidden;
 	margin: 0;
-	background-color: pink;
+	background-color: transparent;
+    padding: 0;
+    width: 820px;
 }
 
 html {
+    width: 820px;
 	height: 100%;
 }
 
@@ -19,19 +20,19 @@ html {
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-name: slide;
 	-webkit-animation-timing-function: ease-in;
-	position: relative;
+	position: absolute;
 	background: url(./fang-buttons.png) #000 no-repeat 10px 10px;
 	background-color: #000;
-	right: -820px;
+	left: -webkit-calc(100% - 820px);
 	top: 0;
 	z-index: -1;
 	margin: 0;
 }
 
 @-webkit-keyframes slide {
-	100% {
-		right: 0;
-	}
+    from {
+        left: 100%;
+    }
 }
 @-webkit-keyframes pop {
 	from {
