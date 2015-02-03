@@ -32,7 +32,7 @@ body {
     }
 }
 
-#text {
+.text {
 	z-index: 1;
 	padding: 10px;
 	font-family: Monaco;
@@ -40,13 +40,8 @@ body {
 	line-height: 15px;
 }
 
-#emergency.notification {
+.emergency.notification {
 	background-color: red;
 }
 
-#buttons {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	z-index: 0;
-}
+
