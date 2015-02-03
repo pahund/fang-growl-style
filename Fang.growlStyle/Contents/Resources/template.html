@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="%title%">
 	<head>
 		<title>Growl Notification</title>
         <meta charset="utf-8">
@@ -9,8 +9,11 @@
 		</style>
 	</head>
 	<body>
-        <div class="%priority% notification" style="opacity: %opacity%">
-            <pre class="text">%text%</pre>
+        <div class="%priority% notification">
+            <div class="background"></div>
+            <div class="title">%title%</div>
+            <div class="text">%text%</div>
+            <pre class="fang-text" style="display: none">%text%</pre>
         </div>
 	</body>
 </html>

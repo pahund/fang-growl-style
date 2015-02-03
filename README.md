@@ -30,6 +30,8 @@ directory (see [install.sh](install.sh)).
 Next step: restart Growl, then go to *Growl Preferences > Displays > Add Config* and select "Fang". Then go to tab
 "Applications" and assign the Fang display style to Keyboard Maestro Growl Action.
 
+## Setting up Keyboard Maestro
+
 In Keyboard Maestro, create a new macro that is triggered by device key and assign it to a key on the Fang.
 
 Make this macro execute a Fang action and put the labels you want to put on the Fang keyboard layout in the Growl
@@ -37,3 +39,21 @@ notification box in the action's message field.
 
 This is a bit tricky and takes some trial and error: you move your labels to the correct position in the notification
 box by adding lots of new lines and spaces.
+
+_Important_: Give the Fang action the "magic" title `fang-cheat-sheet` &mdash; otherwise a plain notification layout
+is used instead of the Fang keyboard layout background.
+
+## Normal Notifications in Keyboard Maestro
+
+If you want to trigger a normal Growl notification from KM without Fang keyboard layout background, simply use
+any other title than `fang-cheat-sheet` for your Growl notification action.
+
+I find it lame that Keyboard Maestro does not allow you to use custom icons for your notification, so I made the
+layout of the non-Fang notification so that the first line of the notification message's body text is used as icon.
+
+This way, you can put an Emoji in the first line (e.g. a ringing bell 🔔 for alerts or a pile of poo 💩 if something
+goes awry).
+
+Remember that you can trigger the Emoji palette in Mac OS X with the key combination Control+Command+Space.
+
+If you don't want an Emoji icon, leave the first line of your message body blank, otherwise it will look quite broken.
